@@ -184,6 +184,9 @@
 				91FFCDBF2227AF2F0041E4B4 /* URLExtension.swift */,
 				91FFCDC12227B0EC0041E4B4 /* UIImageExtension.swift */,
 				91FFCDC32227B7A90041E4B4 /* UIViewExtension.swift */,
+				913574D82226DED8007F614A /* AppInfoHelper.swift */,
+				913574DE2226DED8007F614A /* DirectoryPath.swift */,
+				913574DF2226DED8007F614A /* ScreenShot.swift */,
 			);
 			path = ReleasePart;
 			sourceTree = "<group>";
@@ -193,14 +196,11 @@
 			children = (
 				913574DA2226DED8007F614A /* Utility.swift */,
 				913574E32226DED8007F614A /* AlertUtility.swift */,
-				913574D82226DED8007F614A /* AppInfoHelper.swift */,
-				913574DE2226DED8007F614A /* DirectoryPath.swift */,
 				913574D92226DED8007F614A /* FIFOQueue.swift */,
 				913574DC2226DED8007F614A /* LocalizableHelper.swift */,
 				913574DB2226DED8007F614A /* NetWorkResource.swift */,
 				913574E02226DED8007F614A /* ReadWriteFileManager.swift */,
 				913574E42226DED8007F614A /* ResultDescription.swift */,
-				913574DF2226DED8007F614A /* ScreenShot.swift */,
 				913574E12226DED8007F614A /* SSFTheme.swift */,
 				913574DD2226DED8007F614A /* SwiftNotice.swift */,
 				913574E22226DED8007F614A /* WeakRefCollection.swift */,

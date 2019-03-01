@@ -29,16 +29,6 @@ extension Optional {
     }
 }
 
-extension UIDevice {
-    func isiPhoneX() -> Bool {
-        if UIScreen.main.bounds.height == 812 || UIScreen.main.bounds.width == 812 {
-            return true
-        } else {
-            return false
-        }
-    }
-}
-
 
 //MARK:- CustomOperator
 
@@ -63,20 +53,4 @@ func !?<T>(wrapped: T?, nilDefault: @autoclosure ()->(value: T, text: String)) -
     return wrapped ?? nilDefault().value
 }
 
-//MARK: - Public Fundamental Methods
-
-func checkDevice() -> UIUserInterfaceIdiom {
-    switch UIDevice.current.userInterfaceIdiom {
-    case .phone:
-        return .phone
-    case .pad:
-        return .pad
-    case .carPlay:
-        return .carPlay
-    case .tv:
-        return .tv        
-    case .unspecified:
-        return .unspecified
-    }
-}
 

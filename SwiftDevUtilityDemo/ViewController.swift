@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         testArrayExtension()
         testDictionaryExtension()
         testUIImageExtension()
+        testAppInfoHelper()
+        testDirectoryPath()
     }
 
     func testStringExtension() {
@@ -77,6 +79,28 @@ class ViewController: UIViewController {
         print("======\(aImage?.size)\n")
         let bImage = aImage?.scaledImage(CGRect(x: 0, y: 0, width: 20, height: 20), 1.0)
         print("======\(bImage?.size)\n")
+    }
+    
+    func testAppInfoHelper() {
+        print("-------------now test AppInfoHelper extension---------\n")
+        print("=========\(AppInfoHelper.appName)\n")
+        print("=========\(AppInfoHelper.appVersion)\n")
+        print("=========\(AppInfoHelper.appBuildVersion)\n")
+    }
+    
+    func testDirectoryPath() {
+        print("-------------now test DirectoryPath extension---------\n")
+        
+        print("=========\(DirectoryPath.pathOfDocuments())\n")
+        print("=========\(DirectoryPath.pathOfCache())\n")
+        print("=========\(DirectoryPath.pathOfTemporary())\n")
+        
+        print("=========\(DirectoryPath.urlInDocument(with: "haha"))\n")
+        print("=========\(DirectoryPath.urlInCache(with: "hehe"))\n")
+        print("=========\(DirectoryPath.urlInTemporary(with: "hihi"))\n")
+        
+        print("=========\(DirectoryPath.directoryPathInDocument(withDirectoryName: "test1"))\n")
+        print("=========\(DirectoryPath.directoryURLInDocument(withDirectoryName: "test2"))\n")
     }
 }
 

@@ -7,18 +7,22 @@
 
 import Foundation
 
-struct AppInfoHelper {
-    static var appVersion: String? = {
+public struct AppInfoHelper {
+    
+    ///Fetch the app version
+    public static var appVersion: String? = {
         guard let infoDic = Bundle.main.infoDictionary else {return nil}
         return infoDic["CFBundleShortVersionString"] as? String
     }()
     
-    static var appBuildVersion: String? = {
+    ///Fetch the app build version
+    public static var appBuildVersion: String? = {
         guard let infoDic = Bundle.main.infoDictionary else {return nil}
         return infoDic["CFBundleVersion"] as? String
     }()
     
-    static var appName: String? = {
+    ///Fetch the app name
+    public static var appName: String? = {
         guard let infoDic = Bundle.main.infoDictionary else {return nil}
         return infoDic["CFBundleDisplayName"] as? String
     }()

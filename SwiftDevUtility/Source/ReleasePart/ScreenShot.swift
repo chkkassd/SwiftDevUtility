@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-struct SSFScreenShot {
+public struct SSFScreenShot {
     ///Crop a specific view
-    static func screenShot(withView view: UIView) -> UIImage? {
+    public static func screenShot(withView view: UIView) -> UIImage? {
         UIGraphicsBeginImageContext(view.frame.size)
         view.layer.render(in: UIGraphicsGetCurrentContext()!)
         guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
