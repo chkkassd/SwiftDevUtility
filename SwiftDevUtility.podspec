@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SwiftDevUtility"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.4"
   spec.summary      = "Useful functions of Swift development"
 
   spec.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "Peter Shi" => "peter1990lynn@gmail.com" }
 
   spec.source       = { :git => "https://github.com/chkkassd/SwiftDevUtility.git", :tag => "#{spec.version}" }
-  spec.ios.deployment_target = '10.0'
+  spec.ios.deployment_target = '11.0'
   spec.source_files  = "SwiftDevUtility/**/*.swift", "SwiftDevUtility/Supportting/SwiftDevUtility.h"
   spec.swift_version = "4.2"
 
