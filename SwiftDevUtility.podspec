@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/chkkassd/SwiftDevUtility.git", :tag => "#{spec.version}" }
   spec.ios.deployment_target = '11.0'
-  spec.source_files  = "SwiftDevUtility/**/*"
-  spec.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+  spec.source_files  = "SwiftDevUtility/**/*.swift", "SwiftDevUtility/Supportting/SwiftDevUtility.h"
+  spec.swift_version = "4.2"
 
 end
