@@ -12,10 +12,10 @@ Pod::Spec.new do |spec|
 
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
-  spec.author             = { "Peter Shi" => "peter1990lynn@gmail.com" }
+  spec.author       = { "Peter Shi" => "peter1990lynn@gmail.com" }
 
   spec.source       = { :git => "https://github.com/chkkassd/SwiftDevUtility.git", :tag => "#{spec.version}" }
-  spec.ios.deployment_target = '11.0'
+  spec.ios.deployment_target = '10.0'
   spec.source_files  = "SwiftDevUtility/**/*.swift", "SwiftDevUtility/Supportting/SwiftDevUtility.h"
   spec.swift_version = "4.2"
 
