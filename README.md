@@ -75,6 +75,18 @@ github "chkkassd/SwiftDevUtility"
 ```swift
 public var md5String: String
 ```
+> A read-only computed property that return the md5 string from the origin string.
+> ```swift
+> "Hello world".md5String//3e25960a79dbc69b674cd4ec67a72c62
+> ```
+```swift
+public static func timeFormatString(_ seconds: Double) -> String
+```
+>Translate a date string(yyyy-MM-dd) to Date
+>```swift
+>let time = "2019-11-12"
+>let dateTime = time.translatedDate//
+>```
 ## Contact
 * Email:peter1990lynn@gmail.com
 * Weibo:[@PeterShi](https://weibo.com/u/2138535555)
