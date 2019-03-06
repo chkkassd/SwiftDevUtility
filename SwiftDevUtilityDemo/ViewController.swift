@@ -15,12 +15,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         testStringExtension()
-        testDateExtension()
         testArrayExtension()
         testDictionaryExtension()
+        testSequenceExtension()
+        testDateExtension()
+        testURLExtension()
         testUIImageExtension()
         testAppInfoHelper()
         testDirectoryPath()
+        let image = SSFScreenShot.screenShot(withView: self.view)
     }
 
     func testStringExtension() {
@@ -29,8 +32,8 @@ class ViewController: UIViewController {
         let a = "Hello world"
         print("=======\(a.md5String)\n")
         //test translate to date
-        let time = "2019-11-12"
-        let dateTime = time.translatedDate
+        let time = "2019-3-12T12:34:23+0000"
+        let dateTime = time.convertedDate
         print("=====\(dateTime)\n")
         let seconds = 188.8
         print("=====\(String.timeFormatString(seconds))\n")
@@ -71,6 +74,21 @@ class ViewController: UIViewController {
         let e = ["height": 80, "width": 100]
         let f = e.valueMap { $0 / 2 }
         print("=====\(f)\n")
+    }
+    
+    func testSequenceExtension() {
+        print("-------------now test sequence extension---------\n")
+        let a = [1,2,3,4,4,8,8]
+        let b = a.unique()
+        print("=====\(b)\n")
+    }
+    
+    func testURLExtension() {
+        print("-------------now test URL extension---------\n")
+        let fileURL = DirectoryPath.urlInDocument(with: "test")
+        print("=====\(fileURL)\n")
+        let filePath = fileURL.pathString
+        print("=====\(filePath)\n")
     }
     
     func testUIImageExtension() {

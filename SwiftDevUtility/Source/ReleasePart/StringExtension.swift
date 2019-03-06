@@ -12,7 +12,7 @@ import CommonCrypto
 extension String {
     
     /**
-     A only get computed property that return the md5 string from the origin string.
+     A read-only computed property that return the md5 string from the origin string.
      - Authors:
      Peter.Shi
      - date: 2016.9.21
@@ -29,12 +29,13 @@ extension String {
         return md5String as String
     }
     
-    ///Translate a date string(yy-MM-dd) to Date.
+    ///Convert a ISO8601 string(yyyy-MM-dd'T'HH:mm:ssZ) to Date.
     ///- Authors: Peter.Shi
     ///- date: 2016.10.28
-    public var translatedDate: Date? {
+    public var convertedDate: Date? {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
         return dateFormatter.date(from: self)
     }
     

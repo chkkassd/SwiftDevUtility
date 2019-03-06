@@ -20,16 +20,16 @@ public enum WeekDay: Int {
 
 extension Date {
     
-    ///Translate a date of type Date to a date of type String.
+    ///Convert date to string(yyyy-MM-dd HH:mm:ss)
     ///- Authors: Peter.Shi
     ///- date: 2016.9.28
     public var standardTimeString: String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         return dateFormatter.string(from: self)
     }
     
-    ///Translate a date to weekday.
+    ///Convert a date to chinese weekday string.
     ///- Authors: Peter.Shi
     ///- date: 2016.10.28
     public var weekdayString: String {
@@ -37,7 +37,7 @@ extension Date {
         return arr[self.weekdayIndex!]
     }
     
-    ///Translate a date to weekday enum.
+    ///Convert a date to weekday enum.
     ///- Authors: Peter.Shi
     ///- date: 2016.10.28
     public var weekdayEnum: WeekDay {
@@ -45,7 +45,7 @@ extension Date {
         return arr[self.weekdayIndex!]
     }
     
-    ///Translate a date to weekdayIndex，saturday is 0.
+    ///Convert a date to weekdayIndex(saturday is 0, sunday is 1, Monday is 2,...).
     ///- Authors: Peter.Shi
     ///- date: 2016.11.1
     public var weekdayIndex: Int? {

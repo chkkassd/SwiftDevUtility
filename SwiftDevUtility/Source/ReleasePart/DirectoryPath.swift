@@ -35,7 +35,7 @@ public struct DirectoryPath {
     
     ///Create URL in temporary compent
     public static func urlInTemporary(with component: String) -> URL {
-        let filePath = self.pathOfTemporary().appending("/\(component)")
+        let filePath = self.pathOfTemporary().appending("\(component)")
         if !FileManager.default.fileExists(atPath: filePath) {
             FileManager.default.createFile(atPath: filePath, contents: nil, attributes: nil)
         }
@@ -63,7 +63,7 @@ public struct DirectoryPath {
     ///Creat directory URL at document directory
     public static func directoryURLInDocument(withDirectoryName name: String) -> URL {
         let directoryPath = self.pathOfDocuments().appending("/\(name)")
-        let directoryURL = URL(fileURLWithPath: self.pathOfDocuments()).appendingPathComponent(name)
+        let directoryURL = URL(fileURLWithPath: self.pathOfDocuments()).appendingPathComponent(name, isDirectory: false)
         if !FileManager.default.fileExists(atPath: directoryPath) {
             try? FileManager.default.createDirectory(at: directoryURL, withIntermediateDirectories: true, attributes: nil)
         }

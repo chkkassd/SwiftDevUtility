@@ -9,7 +9,7 @@
 import Foundation
 
 extension URL {
-    ///Let a file url translate to a path string
+    ///Convert a file url to a path string
     public var pathString: String? {
         return self.absoluteString.components(separatedBy: "file://").last
     }

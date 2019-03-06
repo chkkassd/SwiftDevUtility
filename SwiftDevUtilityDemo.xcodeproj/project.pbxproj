@@ -177,10 +177,10 @@
 			isa = PBXGroup;
 			children = (
 				913574F82227788B007F614A /* StringExtension.swift */,
-				9135750622277F9A007F614A /* DateExtension.swift */,
 				91357508222784ED007F614A /* ArrayExtension.swift */,
 				9135750A22278681007F614A /* DictionaryExtension.swift */,
 				9135750C2227934F007F614A /* SequenceExtension.swift */,
+				9135750622277F9A007F614A /* DateExtension.swift */,
 				91FFCDBF2227AF2F0041E4B4 /* URLExtension.swift */,
 				91FFCDC12227B0EC0041E4B4 /* UIImageExtension.swift */,
 				91FFCDC32227B7A90041E4B4 /* UIViewExtension.swift */,
