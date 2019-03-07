@@ -94,7 +94,7 @@ public static func timeFormatString(_ seconds: Double) -> String
 ```
 > Convert seconds to a string with style of "mm:ss"
 > ```swift
-> String.timeFormatString(18.8)//03:08
+> String.timeFormatString(188.8)//03:08
 > ```
 ### ArrayExtension
 ```swift
@@ -131,7 +131,7 @@ init<S: Sequence>(_ sequence: S) where S.Iterator.Element == (key: Key, value: V
 > Initail a dictionary by a sequence,such as [(key:xx, value:xx)].
 > ```swift
 > let c = [("name", "Peter"), ("age", "20")]
-> let d = Dictionary(c)
+> let d = Dictionary(c)//["age": "20", "name": "Peter"]
 > ```
 ---
 ```swift
