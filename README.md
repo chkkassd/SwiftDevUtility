@@ -86,7 +86,7 @@ public var convertedDate: Date?
 >Convert a ISO8601 string(yyyy-MM-dd'T'HH:mm:ssZ) to Date.
 >```swift
 >let time = "2019-3-12T12:34:23+0000"
->let dateTime = time.translatedDate//Optional(2019-03-12 12:34:23 +0000)
+>let dateTime = time.Date//Optional(2019-03-12 12:34:23 +0000)
 >```
 ---
 ```swift
