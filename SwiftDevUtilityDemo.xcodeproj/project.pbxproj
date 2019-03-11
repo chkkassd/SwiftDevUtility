@@ -36,6 +36,7 @@
 		91FFCDC02227AF2F0041E4B4 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFCDBF2227AF2F0041E4B4 /* URLExtension.swift */; };
 		91FFCDC22227B0EC0041E4B4 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFCDC12227B0EC0041E4B4 /* UIImageExtension.swift */; };
 		91FFCDC42227B7A90041E4B4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFCDC32227B7A90041E4B4 /* UIViewExtension.swift */; };
+		91FFCE5822360A640041E4B4 /* SSFSortDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFCE5722360A640041E4B4 /* SSFSortDescriptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		91FFCDBF2227AF2F0041E4B4 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		91FFCDC12227B0EC0041E4B4 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		91FFCDC32227B7A90041E4B4 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		91FFCE5722360A640041E4B4 /* SSFSortDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSFSortDescriptor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				913574E12226DED8007F614A /* SSFTheme.swift */,
 				913574DD2226DED8007F614A /* SwiftNotice.swift */,
 				913574E22226DED8007F614A /* WeakRefCollection.swift */,
+				91FFCE5722360A640041E4B4 /* SSFSortDescriptor.swift */,
 			);
 			path = DevelopPart;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				9135750B22278681007F614A /* DictionaryExtension.swift in Sources */,
 				913574F92227788B007F614A /* StringExtension.swift in Sources */,
 				913574E92226DED8007F614A /* LocalizableHelper.swift in Sources */,
+				91FFCE5822360A640041E4B4 /* SSFSortDescriptor.swift in Sources */,
 				91357509222784ED007F614A /* ArrayExtension.swift in Sources */,
 				913574EF2226DED8007F614A /* WeakRefCollection.swift in Sources */,
 				913574EA2226DED8007F614A /* SwiftNotice.swift in Sources */,

@@ -24,6 +24,17 @@ class ViewController: UIViewController {
         testAppInfoHelper()
         testDirectoryPath()
         let image = SSFScreenShot.screenShot(withView: self.view)
+        
+        let dog1 = Dog(name: "laifu", age: 4)
+        let dog2 = Dog(name: "xiaohu", age: 3)
+        let dog3 = Dog(name: "dingdang", age: 8)
+        let dog4 = Dog(name: "laifu", age: 6)
+        let dog5 = Dog(name: "laifu", age: 9)
+        let dogs = [dog1, dog2, dog3, dog4, dog5]
+        let nameSort: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.name}, >)
+        let ageSort: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.age}, SSFSortDescriptor.shift(>))
+        let newDogs = dogs.sorted(by: nameSort |> ageSort)
+        print(newDogs)
     }
 
     func testStringExtension() {
@@ -122,3 +133,7 @@ class ViewController: UIViewController {
     }
 }
 
+struct Dog {
+    var name: String = ""
+    var age: Int?
+}
