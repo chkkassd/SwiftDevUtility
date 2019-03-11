@@ -87,7 +87,7 @@ public var convertedDate: Date?
 >Convert a ISO8601 string(yyyy-MM-dd'T'HH:mm:ssZ) to Date.
 >```swift
 >let time = "2019-3-12T12:34:23+0000"
->let dateTime = time.translatedDate//Optional(2019-03-12 12:34:23 +0000)
+>let dateTime = time.convertedDate//Optional(2019-03-12 12:34:23 +0000)
 >```
 ---
 ```swift
@@ -95,7 +95,7 @@ public static func timeFormatString(_ seconds: Double) -> String
 ```
 > Convert seconds to a string with style of "mm:ss"
 > ```swift
-> String.timeFormatString(18.8)//03:08
+> String.timeFormatString(188.8)//03:08
 > ```
 ### ArrayExtension
 ```swift
@@ -132,7 +132,7 @@ init<S: Sequence>(_ sequence: S) where S.Iterator.Element == (key: Key, value: V
 > Initail a dictionary by a sequence,such as [(key:xx, value:xx)].
 > ```swift
 > let c = [("name", "Peter"), ("age", "20")]
-> let d = Dictionary(c)
+> let d = Dictionary(c)//["age": "20", "name": "Peter"]
 > ```
 ---
 ```swift
