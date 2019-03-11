@@ -351,9 +351,9 @@ public func |><T>(l: @escaping SortDescriptor<T>, r: @escaping SortDescriptor<T>
 public static func makeDescriptor<Key, Value>(key: @escaping (Key) -> Value, _ isAscending: @escaping (Value, Value) -> Bool) -> SortDescriptor<Key>
 ```
 > Create the specific sortDescriptor by the sorted data and the sorted methods.
-> Parameter: `key` is a function which returns the real sorted value
-> Parameter: `isAscending` is a function which comapre the sorted value
-> Return: A SortDescriptor function which use `key` and `isAscending`
+> Parameter: `key` is a function which returns the real sorted value.
+> Parameter: `isAscending` is a function which comapre the sorted value.
+> Return: A SortDescriptor function which use `key` and `isAscending`.
 ##### SortedDescriptor Example
 ```swift
 struct Dog {
@@ -369,7 +369,7 @@ let dog5 = Dog(name: "laifu", age: 9)
 let dogs = [dog1, dog2, dog3, dog4, dog5]
 
 let nameSortDescriptor: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.name}, >)
-let ageSortDescriptor: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.age}, SSFSortDescriptor.shift(>))
+let ageSortDescriptor: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.age}, >)
 
 let newDogs = dogs.sorted(by: nameSortDescriptor |> ageSortDescriptor)
 print(newDogs)//[Dog(name: "xiaohu", age: 3), Dog(name: "laifu", age: 9), Dog(name: "laifu", age: 6), Dog(name: "laifu", age: 4), Dog(name: "dingdang", age: 8)]
