@@ -358,7 +358,7 @@ public static func makeDescriptor<Key, Value>(key: @escaping (Key) -> Value, _ i
 ```swift
 struct Dog {
     var name: String = ""
-    var age: Int?
+    var age: Int = 0
 }
 
 let dog1 = Dog(name: "laifu", age: 4)
