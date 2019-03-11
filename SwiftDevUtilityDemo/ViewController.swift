@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         let dog5 = Dog(name: "laifu", age: 9)
         let dogs = [dog1, dog2, dog3, dog4, dog5]
         let nameSort: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.name}, >)
-        let ageSort: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.age}, SSFSortDescriptor.shift(>))
+        let ageSort: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.age}, >)
         let newDogs = dogs.sorted(by: nameSort |> ageSort)
         print(newDogs)
     }
@@ -135,5 +135,5 @@ class ViewController: UIViewController {
 
 struct Dog {
     var name: String = ""
-    var age: Int?
+    var age: Int = 0
 }

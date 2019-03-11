@@ -71,6 +71,7 @@ github "chkkassd/SwiftDevUtility"
     * `public static func directoryURLInDocument(withDirectoryName name: String) -> URL`
 * [ScreenShot](#ScreenShot)
     * `public static func screenShot(withView view: UIView) -> UIImage?`
+* [SSFSortDescriptor](#SSFSortDescriptor)
 ### StringExtension
 ```swift
 public var md5String: String
@@ -336,6 +337,43 @@ public static func screenShot(withView view: UIView) -> UIImage?
 > ```swift
 > let image = SSFScreenShot.screenShot(withView: aView)//It will crop aView and return a image
 > ```
+### SSFSortDescriptor
+```swift
+public typealias SortDescriptor<T> = (T, T) -> Bool
+```
+> The documention of the function type (T, T) -> Bool.
+```swift
+infix operator |>: LogicalDisjunctionPrecedence
+public func |><T>(l: @escaping SortDescriptor<T>, r: @escaping SortDescriptor<T>) -> SortDescriptor<T>
+```
+> Mix operator with two SortDescriptor<T> type.
+```swift
+public static func makeDescriptor<Key, Value>(key: @escaping (Key) -> Value, _ isAscending: @escaping (Value, Value) -> Bool) -> SortDescriptor<Key>
+```
+> Create the specific sortDescriptor by the sorted data and the sorted methods.
+> Parameter: `key` is a function which returns the real sorted value
+> Parameter: `isAscending` is a function which comapre the sorted value
+> Return: A SortDescriptor function which use `key` and `isAscending`
+##### SortedDescriptor Example
+```swift
+struct Dog {
+    var name: String = ""
+    var age: Int?
+}
+
+let dog1 = Dog(name: "laifu", age: 4)
+let dog2 = Dog(name: "xiaohu", age: 3)
+let dog3 = Dog(name: "dingdang", age: 8)
+let dog4 = Dog(name: "laifu", age: 6)
+let dog5 = Dog(name: "laifu", age: 9)
+let dogs = [dog1, dog2, dog3, dog4, dog5]
+
+let nameSortDescriptor: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.name}, >)
+let ageSortDescriptor: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.age}, SSFSortDescriptor.shift(>))
+
+let newDogs = dogs.sorted(by: nameSortDescriptor |> ageSortDescriptor)
+print(newDogs)//[Dog(name: "xiaohu", age: 3), Dog(name: "laifu", age: 9), Dog(name: "laifu", age: 6), Dog(name: "laifu", age: 4), Dog(name: "dingdang", age: 8)]
+```
 ## Contact
 * Email:peter1990lynn@gmail.com
 * Weibo:[@PeterShi](https://weibo.com/u/2138535555)
