@@ -6,7 +6,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-orange.svg)](https://github.com/Carthage/Carthage)
 
 A Swift development tool which can make your programming easy.
-## Table of Contentsyyy
+## Table of Contents
 * [General info](#(General-info))
 * [Requirement](#Requirement)
 * [Installation](#Installation)
