@@ -1,4 +1,4 @@
-# SwiftDevUtility/eeeee
+# SwiftDevUtility
 [![Version status](https://img.shields.io/cocoapods/v/SwiftDevUtility.svg)](https://cocoapods.org/pods/SwiftDevUtility)
 ![Platform support](https://img.shields.io/cocoapods/p/SwiftDevUtility.svg)
 [![License](https://img.shields.io/cocoapods/l/SwiftDevUtility.svg)](http://opensource.org/licenses/MIT)
@@ -374,7 +374,7 @@ let ageSortDescriptor: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(ke
 let newDogs = dogs.sorted(by: nameSortDescriptor |> ageSortDescriptor)
 print(newDogs)//[Dog(name: "xiaohu", age: 3), Dog(name: "laifu", age: 9), Dog(name: "laifu", age: 6), Dog(name: "laifu", age: 4), Dog(name: "dingdang", age: 8)]
 ```
-## Contact/rrrrr
+## Contact
 * Email:peter1990lynn@gmail.com
 * Weibo:[@PeterShi](https://weibo.com/u/2138535555)
 ## License
