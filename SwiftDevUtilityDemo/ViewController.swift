@@ -13,7 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         testStringExtension()
         testArrayExtension()
         testDictionaryExtension()
@@ -35,7 +34,6 @@ class ViewController: UIViewController {
         let ageSort: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.age}, >)
         let newDogs = dogs.sorted(by: nameSort |> ageSort)
         print(newDogs)
-        print("hahahaha")
     }
 
     func testStringExtension() {
