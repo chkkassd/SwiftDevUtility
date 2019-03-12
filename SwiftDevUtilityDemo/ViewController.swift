@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         let ageSort: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(key: {$0.age}, >)
         let newDogs = dogs.sorted(by: nameSort |> ageSort)
         print(newDogs)
+        print("hahahaha")
     }
 
     func testStringExtension() {
