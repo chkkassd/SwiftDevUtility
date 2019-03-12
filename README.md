@@ -5,7 +5,7 @@
 [![Language](https://img.shields.io/badge/language-swift-orange.svg)](https://developer.apple.com/swift/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-orange.svg)](https://github.com/Carthage/Carthage)
 
-A Swift development tool which can make your programming easy.rrrrrr
+A Swift development tool which can make your programming easy.
 ## Table of Contents
 * [General info](#(General-info))
 * [Requirement](#Requirement)
@@ -329,7 +329,7 @@ public static func directoryURLInDocument(withDirectoryName name: String) -> URL
 > ```swift
 > DirectoryPath.directoryURLInDocument(withDirectoryName: "test2")//file:///Users/xxx/Library/Developer/CoreSimulator/Devices/761F483C-6A5C-4A4F-8F3C-7FDABBEC5A86/data/Containers/Data/Application/331A1DE9-81A4-4322-88BD-334E34AEBD06/Documents/test2
 > ```
-### ScreenShot/fff
+### ScreenShot
 ```swift
 public static func screenShot(withView view: UIView) -> UIImage?
 ```
@@ -374,7 +374,7 @@ let ageSortDescriptor: SortDescriptor<Dog> = SSFSortDescriptor.makeDescriptor(ke
 let newDogs = dogs.sorted(by: nameSortDescriptor |> ageSortDescriptor)
 print(newDogs)//[Dog(name: "xiaohu", age: 3), Dog(name: "laifu", age: 9), Dog(name: "laifu", age: 6), Dog(name: "laifu", age: 4), Dog(name: "dingdang", age: 8)]
 ```
-## Contact/dddd
+## Contact
 * Email:peter1990lynn@gmail.com
 * Weibo:[@PeterShi](https://weibo.com/u/2138535555)
 ## License
