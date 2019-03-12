@@ -337,7 +337,7 @@ public static func screenShot(withView view: UIView) -> UIImage?
 > ```swift
 > let image = SSFScreenShot.screenShot(withView: aView)//It will crop aView and return a image
 > ```
-### SSFSortDescriptor
+### SSFSortDescriptor/ooooo
 ```swift
 public typealias SortDescriptor<T> = (T, T) -> Bool
 ```
