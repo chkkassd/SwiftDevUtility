@@ -329,7 +329,7 @@ public static func directoryURLInDocument(withDirectoryName name: String) -> URL
 > ```swift
 > DirectoryPath.directoryURLInDocument(withDirectoryName: "test2")//file:///Users/xxx/Library/Developer/CoreSimulator/Devices/761F483C-6A5C-4A4F-8F3C-7FDABBEC5A86/data/Containers/Data/Application/331A1DE9-81A4-4322-88BD-334E34AEBD06/Documents/test2
 > ```
-### ScreenShot
+### ScreenShot/fff
 ```swift
 public static func screenShot(withView view: UIView) -> UIImage?
 ```
