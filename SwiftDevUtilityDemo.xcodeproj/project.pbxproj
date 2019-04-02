@@ -16,7 +16,6 @@
 		913574E52226DED8007F614A /* AppInfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913574D82226DED8007F614A /* AppInfoHelper.swift */; };
 		913574E62226DED8007F614A /* FIFOQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913574D92226DED8007F614A /* FIFOQueue.swift */; };
 		913574E72226DED8007F614A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913574DA2226DED8007F614A /* Utility.swift */; };
-		913574E82226DED8007F614A /* NetWorkResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913574DB2226DED8007F614A /* NetWorkResource.swift */; };
 		913574E92226DED8007F614A /* LocalizableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913574DC2226DED8007F614A /* LocalizableHelper.swift */; };
 		913574EA2226DED8007F614A /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913574DD2226DED8007F614A /* SwiftNotice.swift */; };
 		913574EB2226DED8007F614A /* DirectoryPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913574DE2226DED8007F614A /* DirectoryPath.swift */; };
@@ -77,7 +76,6 @@
 		913574D82226DED8007F614A /* AppInfoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoHelper.swift; sourceTree = "<group>"; };
 		913574D92226DED8007F614A /* FIFOQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIFOQueue.swift; sourceTree = "<group>"; };
 		913574DA2226DED8007F614A /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		913574DB2226DED8007F614A /* NetWorkResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkResource.swift; sourceTree = "<group>"; };
 		913574DC2226DED8007F614A /* LocalizableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableHelper.swift; sourceTree = "<group>"; };
 		913574DD2226DED8007F614A /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		913574DE2226DED8007F614A /* DirectoryPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryPath.swift; sourceTree = "<group>"; };
@@ -189,6 +187,7 @@
 				913574D82226DED8007F614A /* AppInfoHelper.swift */,
 				913574DE2226DED8007F614A /* DirectoryPath.swift */,
 				913574DF2226DED8007F614A /* ScreenShot.swift */,
+				91FFCE5722360A640041E4B4 /* SSFSortDescriptor.swift */,
 			);
 			path = ReleasePart;
 			sourceTree = "<group>";
@@ -200,13 +199,11 @@
 				913574E32226DED8007F614A /* AlertUtility.swift */,
 				913574D92226DED8007F614A /* FIFOQueue.swift */,
 				913574DC2226DED8007F614A /* LocalizableHelper.swift */,
-				913574DB2226DED8007F614A /* NetWorkResource.swift */,
 				913574E02226DED8007F614A /* ReadWriteFileManager.swift */,
 				913574E42226DED8007F614A /* ResultDescription.swift */,
 				913574E12226DED8007F614A /* SSFTheme.swift */,
 				913574DD2226DED8007F614A /* SwiftNotice.swift */,
 				913574E22226DED8007F614A /* WeakRefCollection.swift */,
-				91FFCE5722360A640041E4B4 /* SSFSortDescriptor.swift */,
 			);
 			path = DevelopPart;
 			sourceTree = "<group>";
@@ -274,10 +271,11 @@
 				TargetAttributes = {
 					913574B52226DC19007F614A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					913574CF2226DDA5007F614A = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -354,7 +352,6 @@
 				913574EF2226DED8007F614A /* WeakRefCollection.swift in Sources */,
 				913574EA2226DED8007F614A /* SwiftNotice.swift in Sources */,
 				91FFCDC42227B7A90041E4B4 /* UIViewExtension.swift in Sources */,
-				913574E82226DED8007F614A /* NetWorkResource.swift in Sources */,
 				913574E72226DED8007F614A /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,7 +517,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssf.SwiftDevUtilityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -540,7 +537,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssf.SwiftDevUtilityDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -569,7 +566,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -599,7 +596,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssf.SwiftDevUtility;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

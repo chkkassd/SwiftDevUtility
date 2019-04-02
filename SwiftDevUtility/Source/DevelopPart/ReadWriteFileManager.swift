@@ -12,7 +12,7 @@ struct ReadWriteFileManager {
     //read plist
     func readPlistFile(from fileURL: URL) -> [String: Any]? {
         guard fileURL.pathExtension == "plist", let data = try? Data(contentsOf: fileURL) else {return nil}
-        guard let result = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any] else {return nil}
+        guard let result = ((try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any]) as [String : Any]??) else {return nil}
         return result
     }
 }

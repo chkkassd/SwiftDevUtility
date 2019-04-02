@@ -433,7 +433,7 @@ fileprivate extension Selector {
                     v.alpha = 0
                 }, completion: { b in
                     
-                    if let index = windows.index(where: { (item) -> Bool in
+                    if let index = windows.firstIndex(where: { (item) -> Bool in
                         return item == window
                     }) {
                         windows.remove(at: index)
