@@ -4,6 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftDevUtility.svg)](http://opensource.org/licenses/MIT)
 [![Language](https://img.shields.io/badge/language-swift-orange.svg)](https://developer.apple.com/swift/)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-orange.svg)](https://github.com/Carthage/Carthage)
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 A Swift development tool which can make your programming easy.
 ## Table of Contents
